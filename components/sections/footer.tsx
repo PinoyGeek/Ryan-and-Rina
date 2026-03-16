@@ -155,7 +155,7 @@ export function Footer() {
         >
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 opacity-95">
             <Image
-              src="/monogram/newmonogram.png"
+              src="/monogram/monogram.png"
               alt={`${groomNickname} & ${brideNickname} monogram`}
               fill
               className="object-contain"
@@ -241,35 +241,35 @@ export function Footer() {
                   <motion.div className="backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-5 border transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: 'color-mix(in srgb, var(--color-motif-cream) 93%, transparent)', borderColor: 'color-mix(in srgb, var(--color-motif-silver) 21%, transparent)' }} whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
                   <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 mb-2.5 sm:mb-3 md:mb-4">
                     <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center border flex-shrink-0" style={{ borderColor: 'color-mix(in srgb, var(--color-motif-silver) 25%, transparent)' }}>
-                    <Clock className="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 flex-shrink-0" style={{ color: palette.champagneGold }} />
+                    <Clock className="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 flex-shrink-0" style={{ color: palette.deep }} />
                     </div>
-                    <h4 className={`${cinzel.className} font-semibold text-base sm:text-lg md:text-xl`} style={{ color: palette.softBrown }}>Ceremony</h4>
+                    <h4 className={`${cinzel.className} font-semibold text-base sm:text-lg md:text-xl`} style={{ color: palette.deep }}>Ceremony</h4>
                   </div>
                   <div className={`space-y-2 sm:space-y-2.5 md:space-y-3 ${cormorant.className} text-xs sm:text-sm leading-relaxed`} style={{ color: palette.softBrown }}>
                     <div className="flex items-start gap-2 sm:gap-2.5 md:gap-3">
-                      <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 text-motif-deep" style={{ color: palette.background }} />
+                      <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 text-motif-deep" style={{ color: palette.deep }} />
                       <span className="text-motif-deep">{toTitleCase(ceremonyVenue)}</span>
                     </div>
                     <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
                       <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" style={{ color: palette.deep }} />
-                      <span>{ceremonyTime}</span>
+                      <span className="text-motif-deep">{ceremonyTime}</span>
                     </div>
                   </div>
                 </motion.div>
                       <motion.div className="backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-5 border transition-all duration-300 shadow-lg hover:shadow-xl" style={{ backgroundColor: 'color-mix(in srgb, var(--color-motif-cream) 93%, transparent)', borderColor: 'color-mix(in srgb, var(--color-motif-silver) 21%, transparent)' }} whileHover={{ y: -3 }} transition={{ duration: 0.2 }}>
                   <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3 mb-2.5 sm:mb-3 md:mb-4">
                     <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 bg-motif-cream rounded-full flex items-center justify-center border flex-shrink-0" style={{ borderColor: 'color-mix(in srgb, var(--color-motif-silver) 25%, transparent)' }}>
-                      <Heart className="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 flex-shrink-0" style={{ color: palette.champagneGold }} fill="var(--color-motif-silver)" />
+                      <Heart className="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 flex-shrink-0" style={{ color: palette.deep }} fill="var(--color-motif-silver)" />
                     </div>
-                    <h4 className={`${cinzel.className} font-semibold text-base sm:text-lg md:text-xl`} style={{ color: palette.softBrown }}>Reception</h4>
+                    <h4 className={`${cinzel.className} font-semibold text-base sm:text-lg md:text-xl`} style={{ color: palette.deep }}>Reception</h4>
                   </div>
-                  <div className={`space-y-2 sm:space-y-2.5 md:space-y-3 ${cormorant.className} text-xs sm:text-sm leading-relaxed`} style={{ color: palette.softBrown }}>
+                  <div className={`space-y-2 sm:space-y-2.5 md:space-y-3 ${cormorant.className} text-xs sm:text-sm leading-relaxed`} style={{ color: palette.deep }}>
                     <div className="flex items-start gap-2 sm:gap-2.5 md:gap-3">
-                      <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5" style={{ color: palette.champagneGold }} />
+                      <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5" style={{ color: palette.deep }} />
                       <span>{toTitleCase(receptionVenue)}</span>
                     </div>
                     <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
-                      <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" style={{ color: palette.champagneGold }} />
+                      <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" style={{ color: palette.deep }} />
                       <span>{receptionTime}</span>
                     </div>
                   </div>

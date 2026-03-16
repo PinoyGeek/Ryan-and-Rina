@@ -6,22 +6,19 @@ interface HeroProps {
   visible: boolean;
 }
 
-// Background (beige)          #F5EFE6
-// Section Alternate           #E8DCCB
-// Soft Brown (headings)       #8B6F5A
-// Deep Brown (accents/shadow) #4E3B31
-// Champagne Gold (buttons)    #D6BFA3
-// Champagne Hover (richer)    #C9A989
-// Borders / Dividers          #F2E4D3
-  // Palette tuned for champagne gold + beige + soft brown
- // Palette tuned to motif: sage green, muted sage, warm ivory, powder blue, steel blue, luxury silver
+// --color-motif-deep:   #3A4C3E; /* sage green   — primary, headings, overlays  */
+// --color-motif-medium: #879476; /* muted sage   — secondary text               */
+// --color-motif-accent: #CE979D; /* steel blue   — deeper accent, dividers       */
+// --color-motif-cream:  #EED1D5; /* warm ivory   — surfaces, light text on dark  */
+// --color-motif-soft:   #F4F3F1; /* powder blue  — highlights, glow, progress    */
+// --color-motif-silver: #FFFFFF; , warm ivory, powder blue, steel blue, luxury silver
  const palette = {
-  deep: '#5B6655',    // sage green — primary elegance, headings, borders
-  medium: '#9CAA99',  // soft muted sage — secondary text, subtle elements
-  accent: '#8799A7',  // steel blue — deeper accent, hashtag, dividers
-  cream: '#ECE5DB',   // warm ivory — surfaces, overlays, light text on dark
-  soft: '#C4D1E2',    // powder blue — highlights, glow accents, progress fill
-  silver: '#A9A9A9',  // luxury silver — neutral separators, track backgrounds
+  deep: '#3A4C3E',    // sage green — primary elegance, headings, borders
+  medium: '#879476',  // soft muted sage — secondary text, subtle elements
+  accent: '#CE979D',  // steel blue — deeper accent, hashtag, dividers
+  cream: '#EED1D5',   // warm ivory — surfaces, overlays, light text on dark
+  soft: '#F4F3F1',    // powder blue — highlights, glow accents, progress fill
+  silver: '#FFFFFF',  // luxury silver — neutral separators, track backgrounds
 };
 
 
@@ -34,11 +31,11 @@ const desktopImages: string[] = [
 ];
 
 const mobileImages: string[] = [
-  '/mobile-background/couple (21).jpg',
-  '/mobile-background/couple (11).jpg',
-  '/mobile-background/couple (16).jpg',
-  '/mobile-background/couple (21).jpg',
-  '/mobile-background/couple (14).jpg'
+  '/mobile-background/couple (1).jpg',
+  '/mobile-background/couple (2).jpg',
+  '/mobile-background/couple (3).jpg',
+  '/mobile-background/couple (4).jpg',
+  '/mobile-background/couple (5).jpg'
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
@@ -155,7 +152,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               }}
             >
               <Image
-                src="/monogram/newmonogram.png"
+                src="/monogram/monogram.png"
                 alt="Monogram"
                 fill
                 className="object-contain"
@@ -179,7 +176,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Great Vibes", cursive',
               fontWeight: 400,
-              color: palette.deep, // #F5EFE6
+              color: palette.silver, // #F5EFE6
               textShadow: '0 0 18px rgb(245, 239, 230)',
             }}
           >
@@ -193,7 +190,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Cinzel", serif',
               fontWeight: 700,
-              color: palette.deep, // #F5EFE6
+              color: palette.silver, // #F5EFE6
               textShadow: '0 0 22px rgba(245, 239, 230, 0.95)',
               letterSpacing: '0.05em',
             }}

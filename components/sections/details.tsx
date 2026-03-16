@@ -40,10 +40,10 @@ export function Details() {
   const [rotationOffset, setRotationOffset] = useState(0)
   
   const coupleImages = [
-    "/mobile-background/couple (7).jpg",
-    "/mobile-background/couple (10).jpg",
-    "/mobile-background/couple (13).jpg",
-    "/mobile-background/couple (16).jpg",
+    "/mobile-background/couple (5).jpg",
+    "/mobile-background/couple (4).jpg",
+    "/mobile-background/couple (9).jpg",
+    "/mobile-background/couple (8).jpg",
   ]
 
   const receptionImages = [
@@ -212,7 +212,7 @@ export function Details() {
           <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
           
           {/* Main card */}
-          <div className="relative bg-motif-cream rounded-xl sm:rounded-2xl overflow-hidden border border-motif-deep/20  shadow-[0_16px_40px_rgba(0,0,0,0.18)] hover:shadow-[0_20px_48px_rgba(0,0,0,0.24)] hover:border-motif-deep/80 transition-all duration-300">
+          <div className="relative bg-motif-silver rounded-xl sm:rounded-2xl overflow-hidden border border-motif-deep/20  shadow-[0_16px_40px_rgba(0,0,0,0.18)] hover:shadow-[0_20px_48px_rgba(0,0,0,0.24)] hover:border-motif-deep/80 transition-all duration-300">
             {/* Venue Image */}
             <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[30rem] overflow-hidden">
               <Image
@@ -258,7 +258,7 @@ export function Details() {
                 {/* Day and Year */}
                 <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-7">
                   <p className={`${cinzel.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-motif-deep leading-none`}>
-                    18
+                    16
                   </p>
                   <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-motif-medium via-motif-deep to-motif-medium" />
                   <p className={`${cinzel.className} text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-motif-deep leading-none`}>
@@ -280,7 +280,7 @@ export function Details() {
               </div>
 
               {/* Location Details */}
-              <div className="bg-gradient-to-br from-motif-cream/40 to-motif-cream rounded-xl p-3 sm:p-4 md:p-5 mb-4 sm:mb-6 border border-motif-deep/15">
+              <div className="bg-gradient-to-br from-motif-silver/40 to-motif-silver rounded-xl p-3 sm:p-4 md:p-5 mb-4 sm:mb-6 border border-motif-deep/15">
                 <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-motif-deep mt-0.5 flex-shrink-0" />
                   <div className="flex-1 min-w-0">
@@ -301,7 +301,7 @@ export function Details() {
                   </div>
                   {/* QR Code for Ceremony - Right side */}
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                    <div className="bg-motif-cream p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-motif-deep/20 shadow-sm">
+                    <div className="bg-motif-silver p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-motif-deep/20 shadow-sm">
                       <QRCodeSVG
                         value={ceremonyMapsLink}
                         size={80}
@@ -349,7 +349,7 @@ export function Details() {
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
 
-          <div className="relative elegant-card bg-motif-cream rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.18)] border border-motif-deep/25 premium-shadow hover:border-motif-deep/45 transition-all duration-300">
+          <div className="relative elegant-card bg-motif-silver rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.18)] border border-motif-deep/25 premium-shadow hover:border-motif-deep/45 transition-all duration-300">
        
             <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[30rem] overflow-hidden">
               {receptionImages.map((src, index) => (
@@ -405,7 +405,7 @@ export function Details() {
               </div>
 
         
-              <div className="bg-gradient-to-br from-motif-cream/40 to-motif-cream rounded-xl p-3 sm:p-4 md:p-5 mb-4 sm:mb-6 border border-motif-deep/15">
+              <div className="bg-gradient-to-br from-motif-silver/40 to-motif-silver rounded-xl p-3 sm:p-4 md:p-5 mb-4 sm:mb-6 border border-motif-deep/15">
                 <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-motif-deep mt-0.5 flex-shrink-0" />
                   <div className="flex-1 min-w-0">
@@ -426,7 +426,7 @@ export function Details() {
                   </div>
               
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                  <div className="bg-motif-cream p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-motif-deep/20 shadow-sm">
+                  <div className="bg-motif-silver p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-motif-deep/20 shadow-sm">
                       <QRCodeSVG
                         value={receptionMapsLink}
                         size={80}
@@ -499,7 +499,7 @@ export function Details() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
             
-            <div className="relative bg-motif-cream backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-9 border  hover:shadow-[0_20px_48px_rgba(0,0,0,0.24)] hover:border-motif-deep/70 transition-all duration-300">
+            <div className="relative bg-motif-silver backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-7 lg:p-9 border  hover:shadow-[0_20px_48px_rgba(0,0,0,0.24)] hover:border-motif-deep/70 transition-all duration-300">
               <h4
                 className={`${cinzel.className} text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-motif-deep mb-4 sm:mb-5 md:mb-6 uppercase tracking-[0.16em] text-center px-2`}
               >
@@ -514,7 +514,7 @@ export function Details() {
               {/* Principal sponsor attire image */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/guestAttire.png"
+                  src="/Details/guestAttires.png"
                   alt="Principal sponsor attire — follow the color palette"
                   fill
                   className="object-contain bg-[#FFF7F6]/50 p-2 sm:p-3"
@@ -539,11 +539,15 @@ export function Details() {
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
                   <span className="font-semibold">Dress code:</span> Semi‑formal.
                 </p>
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
+                {/* <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed mb-2">
                   <span className="font-semibold">Palette inspiration:</span> {siteConfig.dressCode.colors}
-                </p>
+                </p> */}
                 <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-motif-deep leading-relaxed italic">
-                  {siteConfig.dressCode.note}
+                TO COMPLEMENT THE BEAUTY AND THE THEME OF OUR SPECIAL DAY, WE
+KINDLY INVITE OUR GUESTS TO DRESS IN FORMAL OR SEMI FORMAL ATTIRE IN THE
+FOLLOWING COLOR PALETTE. WE TRULY APPRECIATE YOUR EFFORT IN DRESSING UP
+AND CELEBRATING WITH US. YOUR PRESENCE AND STYLE WILL MAKE OUR DAY EVEN
+MORE BEAUTIFUL
                 </p>
               </div>
             </div>
@@ -645,7 +649,7 @@ export function Details() {
             {/* Reminders List */}
             <div className="space-y-4 sm:space-y-5 md:space-y-6 max-w-2xl mx-auto">
               {/* Children Reminder */}
-              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+              <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
                   CHILDREN
                 </h4>
@@ -655,7 +659,7 @@ export function Details() {
               </div>
 
               {/* Unplugged Ceremony Reminder */}
-              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+              <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
                   UNPLUGGED CEREMONY
                 </h4>
@@ -665,7 +669,7 @@ export function Details() {
               </div>
 
               {/* Arrival Reminder */}
-              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+              <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
                   ARRIVAL
                 </h4>
@@ -675,7 +679,7 @@ export function Details() {
               </div>
 
               {/* Gifts Reminder */}
-              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+              <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
                   GIFTS
                 </h4>

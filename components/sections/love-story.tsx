@@ -34,12 +34,12 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isFirst={true}
-        title="First Met (2014)"
-        imageSrc="/LoveStory/img1.png"
+        // title="First Met (2014)"
+        imageSrc="/mobile-background/couple (1).jpg"
         text={
           <>
             <p className="mb-4">
-            Met as first-year students at the Adventist University of the Philippines. What began as a simple classroom encounter slowly turned into a meaningful friendship
+            In the halls of a college where dreams were still being written and lots of people walking by, our paths crossed. He was one year ahead, already walking a road and I was just beginning. We first spoke not with smiles, but with a misunderstanding — a brief, imperfect moment during intramurals that could have kept us apart.
             </p>
            
           </>
@@ -50,12 +50,15 @@ export function LoveStory() {
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/LoveStory/img2.png"
-        title="Became a Couple (2019)"
+        imageSrc="/mobile-background/couple (2).jpg"
+        // title="Became a Couple (2019)"
         text={
           <>
             <p>
-            After years of getting to know each other, we finally made it official. Our story began at AUP, and we made it official at MVC as we toured around Mindanao together
+            But God, in His perfect timing, had His own way of bringing us together. 
+            </p>
+            <p>
+Time softened what that day had started. Conversations replaced silence, laughter healed the awkwardness, and slowly, two strangers became friends. In between books, deadlines, and long campus days, we discovered comfort in each other — a feeling that felt like home.
             </p>
           </>
         }
@@ -66,14 +69,30 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/LoveStory/img3.png"
-        title="The Proposal (2025)"
+        imageSrc="/mobile-background/couple (3).jpg"
+        // title="The Proposal (2025)"
         text={
           <>
             <p>
-            As we continue chasing our dreams, we also choose to begin our greatest journey — becoming one. With love, faith, and God at the center, we said yes to forever
+            What began in the simplest place grew into something extraordinary. We learned to wait, to listen, to forgive, and to choose one another every day. Through it all, we saw how God gently guided our hearts, turning coincidence into purpose and meetings into miracles.
             </p>
            
+          </>
+        }
+      />
+
+            {/* SECTION 4: Middle - Light */}
+            <StorySection
+        theme="dark"
+        layout="image-right"
+        imageSrc="/mobile-background/couple (4).jpg"
+        // title="Became a Couple (2019)"
+        text={
+          <>
+            <p>
+            From a chance encounter to a lifetime promise, we now stand hand in hand, ready to begin our forever — grateful for God’s grace that led us here, and excited to share this beautiful beginning with you.
+            </p>
+            
           </>
         }
       />

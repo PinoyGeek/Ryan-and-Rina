@@ -409,7 +409,7 @@ export function Entourage() {
         }`}
       >
         <div
-          className="relative bg-motif-cream/95 backdrop-blur-lg rounded-xl sm:rounded-2xl overflow-hidden border shadow-lg transition-all duration-500 group"
+          className="relative bg-motif-silver backdrop-blur-lg rounded-xl sm:rounded-2xl overflow-hidden border shadow-lg transition-all duration-500 group"
           style={{ borderColor: 'color-mix(in srgb, var(--color-motif-silver) 44%, transparent)', boxShadow: '0 18px 40px color-mix(in srgb, var(--color-motif-deep) 13%, transparent)' }}
         >
           {/* Card content */}

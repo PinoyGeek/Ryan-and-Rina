@@ -11,12 +11,12 @@ interface LoadingScreenProps {
 // motif: "#5B6655, #9CAA99, #ECE5DB, #C4D1E2, #8799A7, #A9A9A9",
 // Countdown boxes with color photos - numbers show days, hours, minutes
 const COUNTDOWN_BOXES = [
-  { src: '/frontboxes/box (3).jpg' },
-  { src: '/frontboxes/box (2).jpg' },
-  { src: '/frontboxes/box (1).jpg' },
+  { src: '/frontboxes/box (1).jpeg' },
+  { src: '/frontboxes/box (2).jpeg' },
+  { src: '/frontboxes/box (3).jpeg' },
 ];
 
-const MAIN_BW_IMAGE = '/frontboxes/front.jpg';
+const MAIN_BW_IMAGE = '/frontboxes/front.jpeg';
 const STAGGER_DELAY_MS = 4000; // Each image appears every 4 seconds
 const BOX_TRANSITION_MS = 1200; // Slow, smooth transition
 const TOTAL_DURATION_MS = COUNTDOWN_BOXES.length * STAGGER_DELAY_MS + 3000;
@@ -102,7 +102,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
   }, [onComplete]);
 
   const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`;
-  const hashtag = '#LtrylAndBryle';
+  const hashtag = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`;
   const productionCredit = '';
 
 
@@ -249,7 +249,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         <div className="flex flex-col items-center justify-center w-full py-6 sm:py-8 px-4 flex-shrink-0">
           <p
             className="text-center text-sm sm:text-base tracking-[0.18em] uppercase text-[family-name:var(--font-crimson)] mb-2"
-            style={{ color: 'var(--color-motif-cream)' }}
+            style={{ color: 'var(--color-motif-deep)' }}
           >
             Almost ready for
           </p>
@@ -257,7 +257,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
             className="text-center text-2xl sm:text-3xl md:text-4xl mb-2"
             style={{
               fontFamily: '"Cinzel", serif',
-              color: 'var(--color-motif-cream)',
+              color: 'var(--color-motif-deep)',
               textShadow: '0 2px 10px rgba(0,0,0,0.35)',
             }}
           >
@@ -274,7 +274,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           {/* Preparing message + progress bar */}
           <p
             className="text-xs sm:text-sm tracking-[0.22em] mt-6 mb-3 font-[family-name:var(--font-crimson)] uppercase font-semibold"
-            style={{ color: 'var(--color-motif-cream)', textShadow: '0 2px 6px rgba(0,0,0,0.6)' }}
+            style={{ color: 'var(--color-motif-deep)', textShadow: '0 2px 6px rgba(0,0,0,0.6)' }}
           >
             Crafting your invitation experience
           </p>

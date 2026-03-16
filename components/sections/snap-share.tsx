@@ -242,7 +242,11 @@ export function SnapShare() {
           <p
             className={`${cormorant.className} text-xs sm:text-sm md:text-base text-motif-cream max-w-2xl mx-auto mt-2 sm:mt-4 leading-relaxed px-2`}
           >
-            Help us remember the little moments of {groomNickname} & {brideNickname}&apos;s day—every smile, embrace, and candid laugh. Your photos and clips complete our love story.
+            BECAUSE YOU HAVE SHARED IN OUR LIVES BY YOUR FRIENDSHIP AND LOVE. WE,
+RINA AND RYAN INVITE YOU TO SHARE THE BEGINNING OF OUR NEW LIFE TOGETHER
+WHEN WE EXCHANGE WEDDING VOWS SATURDAY, THE 16TH OF MAY 2026 AT 2:30 IN THE
+AFTERNOON MINOR BASILICA AND DIOCESAN SHRINE PARISH OF ST. PAUL OF THE
+CROSS
           </p>
           <div className="mx-auto mt-3 sm:mt-5 h-px w-20 sm:w-24" style={{ backgroundColor: "var(--color-motif-deep)" }} />
         </motion.div>

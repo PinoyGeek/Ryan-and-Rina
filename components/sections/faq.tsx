@@ -201,7 +201,7 @@ export function FAQ() {
         <div
           className="relative backdrop-blur-md rounded-xl sm:rounded-2xl overflow-hidden border shadow-lg"
           style={{
-            backgroundColor: 'color-mix(in srgb, var(--color-motif-cream) 94%, transparent)',
+            backgroundColor: 'color-mix(in srgb, var(--color-motif-silver) 94%, transparent)',
             borderColor: 'color-mix(in srgb, var(--color-motif-silver) 44%, transparent)',
             boxShadow: '0 4px 28px color-mix(in srgb, var(--color-motif-deep) 10%, transparent)',
           }}
@@ -216,7 +216,7 @@ export function FAQ() {
                     key={index}
                     className="rounded-xl sm:rounded-2xl border overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
                     style={{
-                      backgroundColor: 'color-mix(in srgb, var(--color-motif-cream) 96%, white)',
+                      backgroundColor: 'color-mix(in srgb, var(--color-motif-silver) 96%, white)',
                       borderColor: 'color-mix(in srgb, var(--color-motif-silver) 33%, transparent)',
                     }}
                   >
