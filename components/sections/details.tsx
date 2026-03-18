@@ -216,7 +216,7 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[30rem] overflow-hidden">
               <Image
-                src="/Details/ceremony.png"
+                src="/Details/venue.png"
                 alt={siteConfig.ceremony.location}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -659,14 +659,14 @@ MORE BEAUTIFUL
               </div>
 
               {/* Unplugged Ceremony Reminder */}
-              <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+              {/* <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
                   UNPLUGGED CEREMONY
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
                   We are having an unplugged ceremony, meaning we kindly ask all guests to put away their phones and cameras. We want everyone to be fully in the moment with us. Don't worry—our professional photographer will capture all the special moments, and we'll be happy to share them with you later!
                 </p>
-              </div>
+              </div> */}
 
               {/* Arrival Reminder */}
               <div className="bg-motif-silver/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">

@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "May 16, 2026",
-    time: "2:00 PM",
+    time: "2:30 PM",
     venue: "Minor Basilica and Diocesan Shrine Parish of St. Paul of the Cross",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
@@ -15,7 +15,7 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "April 15, 2026.",
+      deadline: " April 11, 2026",
       contact: "Rina Mhae Navarro",
       phone: "0968-5431-306",
     },
@@ -24,16 +24,16 @@ export const siteConfig = {
     location: "Minor Basilica and Diocesan Shrine Parish of St. Paul of the Cross",
     venue: "84 Rainbow SSS Village Concepcion Dos Marikina City",
     date: "May 16, 2026",
-    day: "Friday",
-    time: "2:00 PM",
-    entourageTime: "1:00 PM",
-    guestsTime: "1:30 PM",
+    day: "Saturday",
+    time: "2:30 PM",
+    entourageTime: "2:00 PM",
+    guestsTime: "2:00 PM",
   },
   reception: {
     location: "Terrace Venue Water Nymph Resort",
     venue: "Pio Del Pilar Corner Tecson Concepcion Dos Marikina City",
     date: "May 16, 2026",
-    time: "4:00 PM",
+    time: "5:00 PM",
   },
   dressCode: {
       theme: "SEMI-FORMAL",
@@ -81,7 +81,7 @@ Now, as they prepare to say yes before God and the people they love most, Cather
   },
   snapShare: {
     googleDriveLink: "https://drive.google.com/drive/folders/1OHc4gq4VHPequrPTjIrV6-YpZ5ctk9lo?usp=sharing",
-    hashtag: ["#RinaAndRyan", "#RyanAndRina", "#RinaAndRyanWedding"],
+    hashtag: ["#RINAserbaKayRyan"],
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

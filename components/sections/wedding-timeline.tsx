@@ -64,15 +64,15 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    time: guestsTime,
-    title: "Arrival",
+    time: "2:30 PM",
+    title: "Guest Arrival",
     description: "Please arrive on time to find your seat, settle in, and get ready for the celebration.",
     location: ceremonyVenue,
     icon: GuestsIcon,
     imageSrc: "/weddingtimeline/arrivalimage.png",
   },
   {
-    time: ceremonyTime,
+    time: "3:00 PM",
     title: "Wedding Ceremony",
     description: `Join us as ${groomNickname} & ${brideNickname} exchange vows and begin their life together.`,
     location: ceremonyVenue,
@@ -80,7 +80,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/WeddingCeremony.png",
   },
   {
-    time: addHours(ceremonyTime, 1),
+    time: "4:30 PM",
     title: "Cocktail Hour",
     description: "Enjoy drinks and light bites as we transition into the reception and mingle with guests.",
     location: receptionVenue,
@@ -88,7 +88,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/CockTailHour.png",
   },
   {
-    time: addHours(ceremonyTime, 2),
+    time: "5:00 PM",
     title: "Program Starts",
     description: `Celebrate the grand entrance of ${groomNickname} & ${brideNickname} and the start of the evening festivities.`,
     location: receptionVenue,
@@ -96,7 +96,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/reception welcom.png",
   },
   {
-    time: addHours(ceremonyTime, 3),
+    time: "7:30 PM",
     title: "Dinner Service",
     description: "Share a relaxed meal together as we continue the celebration.",
     location: receptionVenue,
@@ -104,7 +104,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/DinnerService.png",
   },
   {
-    time: addHours(ceremonyTime, 4),
+    time: "8:00 PM",
     title: "Party",
     description: "Let's dance the night away and celebrate this new chapter!",
     location: receptionVenue,

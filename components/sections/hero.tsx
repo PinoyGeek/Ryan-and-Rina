@@ -560,7 +560,7 @@ export function Hero() {
                 textShadow: "0 2px 18px rgba(0,0,0,0.9)",
               }}
             >
-              {siteConfig.ceremony.venue}
+              {siteConfig.ceremony.location}
             </p>
           </div>
 

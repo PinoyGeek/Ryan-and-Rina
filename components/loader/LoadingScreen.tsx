@@ -67,11 +67,6 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
   }, []);
 
   useEffect(() => {
-    const t = setInterval(() => setNow(new Date()), 60000); // update every minute
-    return () => clearInterval(t);
-  }, []);
-
-  useEffect(() => {
     const timers: NodeJS.Timeout[] = [];
     COUNTDOWN_BOXES.forEach((_, i) => {
       timers.push(
@@ -130,6 +125,14 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(180deg, color-mix(in srgb, var(--color-motif-medium) 25%, transparent) 0%, transparent 25%, transparent 75%, color-mix(in srgb, var(--color-motif-medium) 33%, transparent) 100%)',
+          }}
+        />
+        {/* Bottom scrim to keep lower text readable on any photo */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.42) 78%, rgba(0,0,0,0.62) 100%)',
           }}
         />
       </div>
@@ -247,50 +250,60 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
 
         {/* Bottom: Names + production credit + progress bar */}
         <div className="flex flex-col items-center justify-center w-full py-6 sm:py-8 px-4 flex-shrink-0">
-          <p
-            className="text-center text-sm sm:text-base tracking-[0.18em] uppercase text-[family-name:var(--font-crimson)] mb-2"
-            style={{ color: 'var(--color-motif-deep)' }}
-          >
-            Almost ready for
-          </p>
           <div
-            className="text-center text-2xl sm:text-3xl md:text-4xl mb-2"
+            className="w-full max-w-md rounded-3xl px-5 sm:px-7 py-5 sm:py-6 border backdrop-blur-md shadow-[0_18px_55px_rgba(0,0,0,0.45)]"
             style={{
-              fontFamily: '"Cinzel", serif',
-              color: 'var(--color-motif-deep)',
-              textShadow: '0 2px 10px rgba(0,0,0,0.35)',
+              backgroundColor: 'color-mix(in srgb, var(--color-motif-deep) 55%, transparent)',
+              borderColor: 'color-mix(in srgb, var(--color-motif-silver) 30%, transparent)',
             }}
           >
-            {coupleNames}
-          </div>
-          {productionCredit && (
             <p
-              className="text-[10px] sm:text-xs font-sans tracking-wider"
-              style={{ color: 'var(--color-motif-soft)' }}
+              className="text-center text-xs sm:text-sm tracking-[0.22em] uppercase font-[family-name:var(--font-crimson)] mb-2"
+              style={{ color: 'var(--color-motif-cream)', textShadow: '0 2px 10px rgba(0,0,0,0.45)' }}
             >
-              {productionCredit}
+              Almost ready for
             </p>
-          )}
-          {/* Preparing message + progress bar */}
-          <p
-            className="text-xs sm:text-sm tracking-[0.22em] mt-6 mb-3 font-[family-name:var(--font-crimson)] uppercase font-semibold"
-            style={{ color: 'var(--color-motif-deep)', textShadow: '0 2px 6px rgba(0,0,0,0.6)' }}
-          >
-            Crafting your invitation experience
-          </p>
-          <div className="w-full max-w-xs mx-auto">
             <div
-              className="h-1.5 rounded-full overflow-hidden"
-              style={{ backgroundColor: 'color-mix(in srgb, var(--color-motif-silver) 25%, transparent)' }}
+              className="text-center text-2xl sm:text-3xl md:text-4xl mb-2"
+              style={{
+                fontFamily: '"Cinzel", serif',
+                color: 'var(--color-motif-cream)',
+                textShadow: '0 2px 16px rgba(0,0,0,0.65)',
+              }}
             >
+              {coupleNames}
+            </div>
+            {productionCredit && (
+              <p
+                className="text-center text-[10px] sm:text-xs font-sans tracking-wider"
+                style={{ color: 'color-mix(in srgb, var(--color-motif-cream) 75%, transparent)' }}
+              >
+                {productionCredit}
+              </p>
+            )}
+
+            <p
+              className="text-center text-[10px] sm:text-xs tracking-[0.28em] mt-5 mb-3 font-[family-name:var(--font-crimson)] uppercase font-semibold"
+              style={{ color: 'var(--color-motif-cream)', textShadow: '0 2px 10px rgba(0,0,0,0.55)' }}
+            >
+              Crafting your invitation experience
+            </p>
+            <div className="w-full max-w-xs mx-auto">
               <div
-                className="h-full rounded-full transition-all duration-300 ease-out"
+                className="h-1.5 rounded-full overflow-hidden"
                 style={{
-                  width: `${progress}%`,
-                  backgroundColor: 'var(--color-motif-soft)',
-                  boxShadow: '0 0 12px color-mix(in srgb, var(--color-motif-soft) 70%, transparent)',
+                  backgroundColor: 'color-mix(in srgb, var(--color-motif-cream) 22%, transparent)',
                 }}
-              />
+              >
+                <div
+                  className="h-full rounded-full transition-all duration-300 ease-out"
+                  style={{
+                    width: `${progress}%`,
+                    backgroundColor: 'var(--color-motif-cream)',
+                    boxShadow: '0 0 14px rgba(255,255,255,0.28)',
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
