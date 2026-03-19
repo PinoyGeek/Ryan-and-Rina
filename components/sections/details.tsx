@@ -216,7 +216,7 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[30rem] overflow-hidden">
               <Image
-                src="/Details/venue.png"
+                src="/Details/ceremony.png"
                 alt={siteConfig.ceremony.location}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -360,7 +360,7 @@ export function Details() {
                   }`}
                 >
                   <Image
-                    src="/Details/reception.png"
+                    src="/Details/venue.png"
                     alt={siteConfig.reception.venue}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"

@@ -19,7 +19,7 @@ export function LoveStory() {
     <div className="min-h-screen bg-motif-cream overflow-x-hidden">
 
 
-      <div className="text-center text-motif-medium z-0 relative px-4">
+      <div className="text-center text-motif-medium z-0 relative px-4 mb-10 sm:mb-12 md:mb-16">
         <div className="w-12 sm:w-16 h-[1px] bg-motif-silver mx-auto mb-4 sm:mb-6 opacity-60"></div>
         <h1 className={`${cinzel.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase tracking-[0.14em] sm:tracking-[0.18em] font-normal leading-tight text-motif-deep mt-8`}>
           Our Love Story
