@@ -576,7 +576,7 @@ export function Details() {
               },
               {
                 title: "Flower Girl & Ring Bearer",
-                src: "/Details/flowerGirl/Ring%20bearer.jpg",
+                src: "/Details/image.png",
                 alt: "Flower girl and ring bearer attire guidelines",
                 notes: ["Please follow the look shown.", "Comfort first—easy to move in.", "Bring an extra change if needed."],
               },
